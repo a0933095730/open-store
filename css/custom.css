@@ -76,10 +76,10 @@
   background-color: #fff;
   left: 0;
   bottom: 10px;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 /* line 69, ../sass/custom.scss */
 .menu ul li a:hover {

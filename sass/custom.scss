@@ -64,7 +64,7 @@
                     background-color: #fff;
                     left: 0;
                     bottom: 10px;
-                    @include transition(all 0.3s ease);                    
+                    @include transition(all 0.2s ease-out);                    
                 }
                 &:hover{
                     text-decoration: none;
