@@ -10,8 +10,15 @@
     clear: both;
   }
 }
+h1,
+.h1{
+    font-size: 3rem;
+}
 .navbar{
-    min-height: 60px;
+    min-height: 80px;
+    @media(max-width: $screen-tablet){
+        min-height: 60px;
+    }
     &.inverse{
         background-color: #fff;
         box-shadow: 0 1px 1px #ccc;
@@ -35,9 +42,13 @@
         display: block;
         background-image: url(../images/ig-es-white.png);
         background-size: contain;
-        height: 60px;
-        width: 275px;
+        height: 80px;
+        width: 380px;
         background-repeat: no-repeat;
+        @media(max-width: $screen-tablet){
+            height: 60px;
+            width: 275px;
+        }
         @media(max-width: 320px){
             width: 220px;
             margin-top: 7px;
@@ -86,9 +97,9 @@
             display: inline-block;
             a{
                 display: block;
-                padding: 15px 20px;
+                padding: 30px 20px;
                 color: #fff;
-                font-size: 1.8rem;
+                font-size: 1.6rem;
                 position: relative;
                 &:after{
                     content: '';
@@ -100,7 +111,8 @@
                     bottom: 10px;
                     @include transition(all 0.2s ease-out);                    
                 }
-                &:hover{
+                &:hover,
+                &.active{
                     text-decoration: none;
                     &:after{
                         width: 100%;
@@ -118,11 +130,13 @@
             left: 0;
             bottom: 0;
             text-align: center;
-            padding-top: 30%;
+            padding-top: 25%;
             li{
                 display: block;
                 a{
-                    font-size: 2.8rem;
+                    font-size: 2.4rem;
+                    color: #fff!important;
+                    padding: 15px 15px;
                     &:after{
                         display: none;
                     }
@@ -202,7 +216,7 @@
             }
             .text{
                 margin: 5% 0 8% 0;
-                font-size: 1.8rem;
+                font-size: 1.6rem;
                 line-height: 1.8;  
                 @media(max-width: $screen-phone){
                     font-size: 1.6rem;
@@ -284,10 +298,10 @@
         }
     }
     p{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         line-height: 1.8;
         @media(max-width: $screen-phone){
-            font-size: 1.6rem;
+            font-size: 1.5rem;
         }
     }
     &.theme-bg{
@@ -387,4 +401,123 @@
         color: #fff;
         background-color: $brand-primary;
     }
+}
+.cost{
+     margin-top: 60px;
+    @media(min-width: $screen-desktop){
+        .col-md-2{
+            padding: 0;
+        }
+    }
+     .cost-item{
+         &.blue{
+          .cost-item-top{
+              .tt,.text{
+                  color: $brand-info;
+              }
+          }
+          .cost-item-bottom{
+              i{
+                  color: $brand-info;
+              }
+          }
+         }
+         &.green{
+          .cost-item-top{
+              .tt,.text{
+                  color: $brand-success;
+              }
+          }
+          .cost-item-bottom{
+              i{
+                  color: $brand-success;
+              }
+          }
+         }
+         &.primary{
+          .cost-item-top{
+              .tt,.text{
+                  color: $brand-primary;
+              }
+          }
+          .cost-item-bottom{
+              i{
+                  color: $brand-primary;
+              }
+          }
+         }
+         .cost-item-top{
+             .tt{
+                font-weight: bold;
+                font-size: 2.8rem;
+                margin: 0;
+                margin-top: 20px;
+            }
+            .price{
+                position: relative;
+                margin: 10px 0;
+                span{
+                    display: inline-block;
+                    &:nth-child(1){
+                        font-size: 1.4rem;
+                        vertical-align: 150%;
+                    }
+                    &:nth-child(2){
+                        font-size: 4.8rem;
+                    }
+                    &:nth-child(3){
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            .btn{
+                width: 80%;
+            }
+            .text{
+                font-size: 1.2rem;
+                margin: 10px 0 20px 0;
+                font-weight: bold;
+            }
+         }
+         .cost-item-bottom{                          
+             text-align: center;
+             table{
+                 width: 100%;
+                 font-size: 1.4rem;
+                 tr{                    
+                     padding: 10px 0;
+                     th,td{
+                         padding: 10px;
+                     }
+                     th{
+                         a{
+                             color: #333333;
+                             text-decoration: underline;
+                         }               
+                     }       
+                 }
+                 &.th-hidden{
+                     tr{
+                         th{
+                             @media(min-width: $screen-desktop){
+                                 display: none;
+                             }
+                         }
+                     }
+                 }
+             }
+         }   
+     }
+}
+.table-hidden{
+    @media(max-width: $screen-desktop){
+        display: none;
+    }
+}
+.visibility-hide{
+    visibility:hidden;
+}
+.user-text{
+    font-size: 1.4rem!important;
+    text-align: justify;
 }
