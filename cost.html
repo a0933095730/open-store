@@ -26,9 +26,7 @@
     <div class="navbar inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-brand">
-                <a href="index.html">
-                    
-                </a>
+                <a href="index.html"> </a>
             </div>
             <div class="menu">
                 <a href="javascript:void(0);" class="toggle-menu">
@@ -39,8 +37,8 @@
                 <ul id="menu">
                     <li><a href="index.html">功能特色</a></li>
                     <li><a href="cost.html">開店費用</a></li>
-                    <li><a href="">登入網站</a></li>
-                    <li><a href="">立即開店</a></li>
+                    <li><a href="https://cp.easystore.co/signin/?ref=f6f8889b" target="_blank">登入網站</a></li>
+                    <li class="toggle-lightbox"><a href="javascript:void(0);" class="open">立即開店</a></li>
                 </ul>
             </div>
         </div>
@@ -376,7 +374,7 @@
                         <h1 class="tt">
                             超過 30,000 名賣家使用 EasyStore 平台開他們第一家網路商店！
                         </h1>
-                        <a href="#" class="btn btn-primary btn-lg">
+                        <a href="javascript:void(0);" class="btn btn-primary btn-lg" id="goTop">
                             選擇你的方案
                         </a>
                     </div>    
@@ -479,20 +477,50 @@
         <section class="wrap wrap-dark">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 toggle-lightbox">
                         <h1 class="tt">
                             馬上註冊14天免費試用版，透過試用了解更多功能
                         </h1>
-                        <a href="#" class="btn btn-primary btn-lg">
+                        <a href="javascript:void(0);" class="btn btn-primary btn-lg open">
                             立即開店
-                        </a>
+                        </a>                        
                     </div>    
                 </div>    
             </div>    
         </section>
+        <footer class="wrap wrap-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copy_txt">                                                  
+                                <a title="愛逛街行銷服務總覽：電子商務導購、商店O2O行銷、馬來西亞跨境電商" href="http://iguang.tw/u/5506/article/677388.html" target="_blank" _hover-ignore="1">想要找愛逛街合作</a> | 
+                                <a title="優仕網" href="http://www.youthwant.com.tw/" target="_blank" _hover-ignore="1">優仕網</a> | 
+                                <a title="樂多日誌" href="http://blog.roodo.com/" target="_blank" _hover-ignore="1">樂多日誌</a> |
+                                <a title="小優仕" href="http://www.kidsnews.com.tw" target="_blank" _hover-ignore="1">小優仕</a> |
+                                <a title="flog臉書備份" href="https://flog.tw/" target="_blank">臉書備份</a> |
+                                <a title="愛逛街首頁" href="http://iguang.tw/">愛逛街首頁</a>
+                                <br>
+                                iGuang.tw 愛逛街 since Feb. 2013. Copyright Ⓒ Shinewant Tech. 2000-2017 . All rights reserved.<br>
+                                常年法律顧問: 明沂律師事務所 陳以蓓律師                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="es-lightbox">
+        <a href="#" class="close-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div id='easystore_signup_iframe'></div>
     </div>
     <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    !function(t,e){var i=document.createElement('iframe'),n=document.getElementById('easystore_signup_iframe');i.setAttribute('src','https://www.easystore.co/signup/iframe?ref=f6f8889b&utm_source=iframe&utm_medium=iframe'),i.setAttribute('style','width:100%; height:100%; top:0; left:0; border:none; position:absolute;'),n.setAttribute('style','clear:both; position:relative; padding-bottom:61.25%; padding-top:25px; min-height:840px;'),n.appendChild(i),e['']=t}({},function(){return this}());
+    </script>
     <script src="js/menu.js"></script>
 </body>
 </html>

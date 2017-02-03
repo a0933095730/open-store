@@ -215,7 +215,7 @@ h1,
                 }
             }
             .text{
-                margin: 5% 0 8% 0;
+                margin: 5% 0 6% 0;
                 font-size: 1.6rem;
                 line-height: 1.8;  
                 @media(max-width: $screen-phone){
@@ -229,13 +229,14 @@ h1,
     .btn{
         font-size: 1.8rem;
         margin-top: 3%;
+        padding: 10px 0;
         @media(max-width: $screen-phone){
             font-size: 1.6rem;
         } 
     }
 }
 .btn-wrap{
-    padding: 50% 0;
+    padding: 30% 0;
     @media (max-width: $screen-desktop){
         padding: 0 0;
     }
@@ -520,4 +521,54 @@ h1,
 .user-text{
     font-size: 1.4rem!important;
     text-align: justify;
+}
+.good-list{
+    max-width: 330px;
+    margin: 0 auto;
+    text-align: left; 
+}
+//燈箱
+.es-lightbox{
+    position: fixed!important;
+    z-index: 2000;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+    height: 100vh;
+    background-color: #fff;
+    @media(max-width: $screen-phone){
+        
+        overflow-y: scroll;
+    }
+}
+.close-btn{
+    position: absolute;
+    z-index: 2001;
+    padding: 25px;
+    right: 0;    
+    span{
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: $brand-primary;
+        margin-bottom: 6px;
+        @include transition(all 0.2s ease);
+        &:nth-child(1){
+            @include transform(rotate(45deg) translate3d(3px,6px,0));
+        }
+        &:nth-child(2){
+            width: 0;
+        }
+        &:nth-child(3){
+            @include transform(rotate(-45deg) translate3d(7px,-10px,0));
+        }  
+    }
+}
+.copy_txt{
+    font-size: 1.4rem;    
+    color: #777;
+    a{
+        color: #777;
+    }
 }

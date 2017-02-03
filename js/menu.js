@@ -9,3 +9,15 @@ $('.toggle-menu').on('click',function(){
     }
 });
 
+$('.toggle-lightbox').on('click','.open',function(){
+    $('.es-lightbox').fadeIn('fast');
+    $('body').addClass('modal-open')
+});
+$('.close-btn').on('click',function(){
+    $('.es-lightbox').fadeOut('fast');
+    $('body').removeClass('modal-open')
+});
+
+$('#goTop').on('click',function(){
+    $('html,body').animate({scrollTop: 0}, 500);
+});
