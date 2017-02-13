@@ -163,6 +163,11 @@ h1, .h1 { font-size: 3rem; }
 .apps .item .item-bottom .cont .title { padding: 10px 10px; color: #b1b1b1; border-top: 1px solid #f1f1f1; background-color: transparent; }
 .apps .item .item-bottom .cont .text { padding: 20px 10px; color: #7d7d7d; }
 
+.apps-menu { padding: 0; margin: 0; list-style: none; background-color: #b7c1c7; padding: 0.5em 1em; display: inline-block; margin-bottom: 5%; }
+.apps-menu li { display: inline-block; }
+.apps-menu li a { display: block; color: #000; padding: 0.5em 0.3em; font-size: 1.5rem; }
+.apps-menu li a.active { text-decoration: underline; }
+
 .themes .col-sm-6 { margin-bottom: 60px; padding: 0 30px; }
 @media (max-width: 768px) { .themes .col-sm-6 { padding: 0 50px; } }
 .themes .item { display: block; border-radius: 4px; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05); height: 0; padding-bottom: 140%; background-position: center top; background-size: cover; background-color: #dae2e6; position: relative; box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2); position: relative; top: 0; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
