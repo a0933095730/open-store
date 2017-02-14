@@ -147,7 +147,7 @@ h1, .h1 { font-size: 3rem; }
 @media (min-width: 992px) { .examples .item:hover { top: -4px; } }
 .examples .item .link { position: absolute; bottom: 0; background-color: #fff; width: 100%; padding: 10px; text-align: left; box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.2); }
 .examples .item .link .tt { padding: 0; margin: 0; }
-.examples .item .link a { color: #ababab; }
+.examples .item .link a { color: #ababab; font-size: 1.4rem; }
 
 .apps .col-sm-6 { margin-bottom: 30px; }
 @media (max-width: 480px) { .apps .col-sm-6 { padding: 0 30px; } }
